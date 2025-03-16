@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlanIt - Event Management</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .hero-section {
+            background: url('https://t4.ftcdn.net/jpg/08/52/61/01/360_F_852610192_mDCPHk42G9qHrROdQYx93eHuk5AMFpQQ.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        .hero-section p {
+            font-size: 1.5rem;
+        }
+        .btn-primary {
+            background-color: #ff6f61;
+            border: none;
+            padding: 10px 30px;
+            font-size: 1.2rem;
+        }
+        .btn-primary:hover {
+            background-color: #ff4a3d;
+        }
+        .services-section, .about-section, .events-section {
+            padding: 60px 0;
+        }
+        .services-section h2, .about-section h2, .events-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+        .card {
+            border: none;
+            transition: transform 0.3s;
+            text-align: center;
+            padding: 20px;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card i {
+            font-size: 3rem;
+            color: #ff6f61;
+            margin-bottom: 20px;
+        }
+        .event-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .event-card:hover {
+            transform: translateY(-10px);
+        }
+        .event-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .event-card .card-body {
+            padding: 20px;
+        }
+        .event-card .btn {
+            width: 100%;
+            margin-top: 10px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-primary">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold" href="./index.html">PlanIt</a>
+        </div>
+    </nav>
+      
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Welcome to PlanIt</h1>
+            <p>Your ultimate event management solution</p>
+            <a href="#services" class="btn btn-primary">Explore Services</a>
+            <a href="./loginUser.html" class="btn btn-primary">Login</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="text-center">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <i class="fas fa-briefcase"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Corporate Events</h5>
+                            <p class="card-text">We specialize in organizing corporate events that leave a lasting impression.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <i class="fas fa-ring"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Weddings</h5>
+                            <p class="card-text">Let us make your special day unforgettable with our expert wedding planning.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <i class="fas fa-birthday-cake"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Private Parties</h5>
+                            <p class="card-text">From birthdays to anniversaries, we handle all the details so you can enjoy the party.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="text-center">About Us</h2>
+            <p class="text-center">PlanIt is a premier event management company dedicated to creating memorable experiences. With a team of experienced professionals, we ensure every event is executed flawlessly.</p>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events-section">
+        <div class="container">
+            <h2 class="text-center">Upcoming Events</h2>
+            <div class="row">
+                <!-- Event 1 -->
+                <div class="col-md-4">
+                    <div class="event-card">
+                        <img src="https://via.placeholder.com/400x200" alt="Event 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Music Festival 2023</h5>
+                            <p class="card-text">Join us for the biggest music festival of the year featuring top artists from around the world.</p>
+                            <p><strong>Date:</strong> November 15, 2023</p>
+                            <p><strong>Location:</strong> New York City</p>
+                            <a href="#" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event 2 -->
+                <div class="col-md-4">
+                    <div class="event-card">
+                        <img src="https://via.placeholder.com/400x200" alt="Event 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Tech Conference</h5>
+                            <p class="card-text">A gathering of tech enthusiasts and industry leaders to discuss the future of technology.</p>
+                            <p><strong>Date:</strong> December 5, 2023</p>
+                            <p><strong>Location:</strong> San Francisco</p>
+                            <a href="#" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event 3 -->
+                <div class="col-md-4">
+                    <div class="event-card">
+                        <img src="https://via.placeholder.com/400x200" alt="Event 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Food & Wine Expo</h5>
+                            <p class="card-text">Experience the finest cuisines and wines from around the globe.</p>
+                            <p><strong>Date:</strong> January 20, 2024</p>
+                            <p><strong>Location:</strong> Paris</p>
+                            <a href="#" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p>&copy; 2023 PlanIt. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
